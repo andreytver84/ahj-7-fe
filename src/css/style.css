@@ -7,3 +7,8 @@ body {
     padding: 0 15px;
     box-sizing: border-box;
 }
+
+.preview-image {
+    max-width: 400px;
+    margin-top: 40px;
+}
