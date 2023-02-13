@@ -8,7 +8,61 @@ body {
     box-sizing: border-box;
 }
 
-.preview-image {
+.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+  }
+  .form-wrap {
+    background: #ffffff;
     max-width: 400px;
-    margin-top: 40px;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+  }
+  .form-wrap h3 {
+    text-align: center;
+  }
+  .form-wrap .input-block {
+    margin: 0 0 20px;
+  }
+  .form-wrap input, .form-wrap textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+.btn {
+    background: #fff;
+    box-shadow: none;
+    border: 1px solid #888;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin: 0 0 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #888;
+    color: #fff;
+}
+
+.ticket {
+    padding: 20px 20px 0;
+    border: 1px solid #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ticket > span {
+    margin-bottom: 20px;
 }
