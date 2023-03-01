@@ -13,7 +13,7 @@ const closeModal = function (modal) {
 };
 
 const responseXhr = function (method, url, body = null) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const xhr = new XMLHttpRequest();
 
     xhr.onreadystatechange = function () {
@@ -31,7 +31,7 @@ const responseXhr = function (method, url, body = null) {
   });
 };
 
-addTicket.addEventListener("click", (e) => {
+addTicket.addEventListener("click", () => {
   showModal(modalAddTicket);
 });
 
